@@ -33,6 +33,7 @@ public class CommandListener extends TMListener{
 				m.setForegroundColor(Color.RED);
 				m.setMouseModel(new MessageModel("Will be available in a future version"));
 				mp.chat.onMessageReceived(new ChatMessage(m));
+				e.setCancelled(true);
 			}
 		}
 	}
