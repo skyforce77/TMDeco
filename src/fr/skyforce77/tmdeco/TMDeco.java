@@ -28,6 +28,10 @@ public class TMDeco extends Plugin{
 		new CustomBlock(this, "alphagold", BlockType.GOLD_BLOCK, getTexture("alphagold"));
 		new CustomBlock(this, "alphairon", BlockType.IRON_BLOCK, getTexture("alphairon"));
 		new CustomBlock(this, "betairon", BlockType.IRON_BLOCK, getTexture("betairon"));
+		new CustomBlock(this, "copperblock", BlockType.IRON_BLOCK, getTexture("cuivre"));
+		new CustomBlock(this, "copperbricks", BlockType.BRICKS, getTexture("cuivrebrick"));
+		new CustomBlock(this, "copperore", BlockType.IRON_ORE, getTexture("cuivreore"));
+		new CustomBlock(this, "steel", BlockType.QUARTZ, getTexture("acier"));
 	}
 	
 	public static ImageIcon getTexture(String texture) {
