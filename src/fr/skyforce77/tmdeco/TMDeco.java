@@ -32,6 +32,8 @@ public class TMDeco extends Plugin{
 		new CustomBlock(this, "copperbricks", BlockType.BRICKS, getTexture("cuivrebrick"));
 		new CustomBlock(this, "copperore", BlockType.IRON_ORE, getTexture("cuivreore"));
 		new CustomBlock(this, "steel", BlockType.QUARTZ, getTexture("acier"));
+		new CustomBlock(this, "box", BlockType.PISTON, getTexture("yashik"));
+		new CustomBlock(this, "pavement", BlockType.SAND, getTexture("bitume"));
 	}
 	
 	public static ImageIcon getTexture(String texture) {
