@@ -3,6 +3,7 @@ import javax.swing.ImageIcon;
 
 import fr.skyforce77.towerminer.api.BlockType;
 import fr.skyforce77.towerminer.api.Plugin;
+import fr.skyforce77.towerminer.api.PluginStatus;
 import fr.skyforce77.towerminer.blocks.CustomBlock;
 
 
@@ -14,7 +15,7 @@ public class TMDeco extends Plugin{
 	}
 	
 	@Override
-	public void onEnable() {
+	public PluginStatus onEnable() {
 		new CustomBlock(this, "tuiles", BlockType.STONE, getTexture("tuiles"), getTexture("tuile"));
 		new CustomBlock(this, "parket", BlockType.PLANKS, getTexture("parket"));
 		new CustomBlock(this, "ardoise", BlockType.STONE, getTexture("ardoise"));
@@ -34,6 +35,7 @@ public class TMDeco extends Plugin{
 		new CustomBlock(this, "steel", BlockType.QUARTZ, getTexture("acier"));
 		new CustomBlock(this, "box", BlockType.PISTON, getTexture("yashik"));
 		new CustomBlock(this, "pavement", BlockType.SAND, getTexture("bitume"));
+		return PluginStatus.OK;
 	}
 	
 	public static ImageIcon getTexture(String texture) {
